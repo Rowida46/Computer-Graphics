@@ -2,7 +2,7 @@
 
 
 <details>
-  <summary>**Computer Graphics Course Project that includes the Following algorithms**</summary>
+  <summary>Computer Graphics Course Project that includes the Following algorithms</summary>
 
 
   - **DDA**
