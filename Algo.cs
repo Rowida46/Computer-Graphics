@@ -12,7 +12,7 @@ using System.Windows.Forms;
 namespace Computer_graphics
 {
 
-    public partial class DDA : Form
+    public partial class Algo : Form
     {
         public void DDA_fun(int x1, int x2, int y1, int y2, Bitmap pp)
         {
@@ -37,7 +37,67 @@ namespace Computer_graphics
 
 
 
-        public DDA()
+        public void Circle_fun(int r, int xcenter, int ycenter, Bitmap pp)
+        {
+            int x = 0;
+            int y = r;
+            int p = 1 - r;
+
+            while (x < r)
+            {
+                //pp.SetPixel(x, y, Color.DarkBlue);
+                x += 1;
+                if (p < 0)
+                    p += (2 * x + 1);
+
+                else
+                {
+                    y -= 1;
+                    p += (2 * (x - y) + 1);
+                }
+
+            }
+            pictureBox1.Image = pp;
+        }
+
+        public void bres_fun(int x1, int x2, int y1, int y2, Bitmap pp)
+        {
+            int dx = Math.Abs(x1 - x2);
+            int dy = Math.Abs(y1 - y2);
+            int x, xend, y;
+
+            int p = 2 * dy - dx;
+            int d2 = 2 * dy, dw2 = 2 * (dy - dx);
+
+            if (x1 > x2)
+            {
+                x = x2; xend = x1; y = y2;
+            }
+
+            else
+            {
+                x = x1; xend = x2; y = y1;
+            }
+
+            while (x < xend)
+            {
+                pp.SetPixel(x, y, Color.DarkBlue);
+                x += 1;
+
+                if (p < 0)
+                    p += d2;
+
+                else
+                {
+                    y += 1;
+                    p += dw2;
+                }
+
+            }
+            pictureBox1.Image = pp;
+        }
+
+        public Algo()
         {
             InitializeComponent();
         }

@@ -30,7 +30,7 @@ namespace Computer_graphics
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-            DDA dda_alg = new DDA();
+            Algo dda_alg = new Algo();
 
             this.Hide();
             dda_alg.Show();
@@ -39,16 +39,12 @@ namespace Computer_graphics
 
         private void bresham_Click(object sender, EventArgs e)
         {
-            Bresneham bres = new Bresneham();
-            this.Hide();
-             bres.Show();
+            
         }
 
         private void bunifuFlatButton3_Click(object sender, EventArgs e)
         {
-            Circle circ = new Circle();
-            this.Hide();
-            circ.Show();
+            
         }
     }
 }

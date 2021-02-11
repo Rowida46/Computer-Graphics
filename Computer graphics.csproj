@@ -51,11 +51,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DDA.cs">
+    <Compile Include="Algo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DDA.Designer.cs">
-      <DependentUpon>DDA.cs</DependentUpon>
+    <Compile Include="Algo.Designer.cs">
+      <DependentUpon>Algo.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -65,8 +65,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="DDA.resx">
-      <DependentUpon>DDA.cs</DependentUpon>
+    <EmbeddedResource Include="Algo.resx">
+      <DependentUpon>Algo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

@@ -1,7 +1,7 @@
 ﻿
 namespace Computer_graphics
 {
-    partial class DDA
+    partial class Algo
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Computer_graphics
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DDA));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Algo));
             this.ybt = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.YAT = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.XAT = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
