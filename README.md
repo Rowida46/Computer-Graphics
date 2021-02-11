@@ -11,3 +11,12 @@
   - **Bresneham**
 
     - [code](https://github.com/Rowida46/Computer-Graphics/blob/main/Bresneham.cs)
+
+
+
+
+
+### Main Form 
+-----
+
+![](https://github.com/Rowida46/Machine-Learning/blob/master/MainForm.png)
