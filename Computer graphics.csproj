@@ -51,18 +51,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bresneham.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Bresneham.Designer.cs">
-      <DependentUpon>Bresneham.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Circle.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Circle.Designer.cs">
-      <DependentUpon>Circle.cs</DependentUpon>
-    </Compile>
     <Compile Include="DDA.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,12 +65,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Bresneham.resx">
-      <DependentUpon>Bresneham.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Circle.resx">
-      <DependentUpon>Circle.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="DDA.resx">
       <DependentUpon>DDA.cs</DependentUpon>
     </EmbeddedResource>
