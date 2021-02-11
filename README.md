@@ -10,7 +10,7 @@
 
   - **Bresneham**
 
-    - [code](https://github.com/Rowida46/Computer-Graphics/blob/main/Bresneham.cs)
+    - [Code](https://github.com/Rowida46/Computer-Graphics/blob/main/Bresneham.cs)
 
 
 
