@@ -35,9 +35,7 @@ namespace Computer_graphics
             pictureBox1.Image = pp;
         }
 
-
-
-        public void Circle_fun(int r, int xcenter, int ycenter, Bitmap pp)
+        public void Circle_fun(int xc, int yc, int r, Bitmap pp)
         {
             int x = 0;
             int y = r;
@@ -55,6 +53,15 @@ namespace Computer_graphics
                     y -= 1;
                     p += (2 * (x - y) + 1);
                 }
+                pp.SetPixel(xc + x, yc + y, Color.Red);
+                pp.SetPixel(xc - x, yc - y, Color.Red);
+                pp.SetPixel(xc + x, yc - y, Color.Red);
+                pp.SetPixel(xc - x, yc + y, Color.Red);
+
+                pp.SetPixel(xc + y, yc + x, Color.Red);
+                pp.SetPixel(xc - y, yc - x, Color.Red);
+                pp.SetPixel(xc + y, yc - x, Color.Red);
+                pp.SetPixel(xc - y, yc + x, Color.Red);
 
             }
             pictureBox1.Image = pp;
@@ -97,6 +104,53 @@ namespace Computer_graphics
             pictureBox1.Image = pp;
         }
 
+        public void ellipse_fun(Bitmap bp, int xc, int yc, int rx, int ry)
+        {
+            // regoin 1
+            double pp = (ry * ry) - (rx * rx * ry) + ((rx * rx) + 0.25);
+            int p1 = (int)pp;
+            int x = 0, y = ry;
+            while ((2 * rx * rx * y) > (2 * ry * ry * x))
+            {
+                bp.SetPixel(xc + x, yc + y, Color.Red);
+                bp.SetPixel(xc - x, yc - y, Color.Red);
+                bp.SetPixel(xc - x, yc + y, Color.Red);
+                bp.SetPixel(xc + x, yc - y, Color.Red);
+
+                x++;
+
+                if (p1 < 0)
+                    p1 += (2 * ry * ry * x) + (ry * ry);
+                else
+                {
+                    y--;
+                    p1 += (2 * ry * ry * x) - (2 * rx * rx * y) + (ry * ry);
+                }
+            }
+
+            // regoin 2
+            pp = ((ry * ry) * (x + 0.5) * (x + 0.5)) + ((rx * rx) * (y - 1) * (y - 1)) - (rx * rx * ry * ry);
+            int p2 = (int)pp;
+            while (y >= 0)
+            {
+                bp.SetPixel(xc + x, yc + y, Color.Red);
+                bp.SetPixel(xc - x, yc - y, Color.Red);
+                bp.SetPixel(xc - x, yc + y, Color.Red);
+                bp.SetPixel(xc + x, yc - y, Color.Red);
+
+                y--;
+                if (p2 > 0)
+                    p2 -= (2 * rx * rx * y) + (rx * rx);
+                else
+                {
+                    x++;
+                    p2 += (2 * ry * ry * x) - (2 * rx * rx * y) + (rx * rx);
+                }
+            }
+            pictureBox1.Image = bp;
+        }
+
+
         public Algo()
         {
             InitializeComponent();
@@ -113,17 +167,67 @@ namespace Computer_graphics
             int x2 = int.Parse(xbt.Text);
             int y1 = int.Parse(YAT.Text);
             int y2 = int.Parse(ybt.Text);
-
-
             Bitmap pp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
-            DDA_fun(x1, x2, y1, y2, pp);
+
+            try
+            {
+                if (DDA.Checked)
+                    DDA_fun(x1, x2, y1, y2, pp);
+
+                if (bres.Checked)
+                    bres_fun(x1, x2, y1, y2, pp);
+
+                if (Elipse.Checked)
+                    ellipse_fun(pp, x1, y1, x2, y2);
+
+                if (circle.Checked)
+                    Circle_fun(x1, y1 , x2 , pp);
+            }
+
+            catch (Exception ) { }
+
+
         }
+
+
+
 
         private void bunifuTileButton1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            MainForm mn = new MainForm();
-            mn.Show();
+          
+
+            XAT.Clear();
+            xbt.Clear();
+            YAT.Clear();
+            ybt.Clear();
+
+
+            // pp.Image = New Bitmap(pp.ClientSize.Width, pp.ClientSize.Height)
+            pictureBox1.Invalidate();
+
+
+
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bres_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuCustomLabel3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuCustomLabel2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

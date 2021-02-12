@@ -18,9 +18,6 @@ E:\Computer-Graphics\bin\Debug\Computer graphics.exe
 E:\Computer-Graphics\bin\Debug\Computer graphics.pdb
 E:\Computer-Graphics\bin\Debug\Bunifu_UI_v1.5.3.dll
 E:\Computer-Graphics\obj\Debug\Computer graphics.csprojAssemblyReference.cache
-E:\Computer-Graphics\obj\Debug\Computer_graphics.Bresneham.resources
-E:\Computer-Graphics\obj\Debug\Computer_graphics.Circle.resources
-E:\Computer-Graphics\obj\Debug\Computer_graphics.DDA.resources
 E:\Computer-Graphics\obj\Debug\Computer_graphics.MainForm.resources
 E:\Computer-Graphics\obj\Debug\Computer_graphics.Properties.Resources.resources
 E:\Computer-Graphics\obj\Debug\Computer graphics.csproj.GenerateResource.cache
@@ -28,3 +25,4 @@ E:\Computer-Graphics\obj\Debug\Computer graphics.csproj.CoreCompileInputs.cache
 E:\Computer-Graphics\obj\Debug\Computer graphics.csproj.CopyComplete
 E:\Computer-Graphics\obj\Debug\Computer graphics.exe
 E:\Computer-Graphics\obj\Debug\Computer graphics.pdb
+E:\Computer-Graphics\obj\Debug\Computer_graphics.Algo.resources
