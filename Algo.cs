@@ -27,7 +27,7 @@ namespace Computer_graphics
 
             for (int i = 0; i < steps; i++)
             {
-                pp.SetPixel((int)(Math.Round(x)), (int)(Math.Round(y)), Color.DarkBlue);
+                pp.SetPixel((int)(Math.Round(x)), (int)(Math.Round(y)), Color.BlueViolet);
                 x += inc_x;
                 y += inc_y;
 
@@ -112,10 +112,10 @@ namespace Computer_graphics
             int x = 0, y = ry;
             while ((2 * rx * rx * y) > (2 * ry * ry * x))
             {
-                bp.SetPixel(xc + x, yc + y, Color.Red);
-                bp.SetPixel(xc - x, yc - y, Color.Red);
-                bp.SetPixel(xc - x, yc + y, Color.Red);
-                bp.SetPixel(xc + x, yc - y, Color.Red);
+                bp.SetPixel(xc + x, yc + y, Color.BlueViolet);
+                bp.SetPixel(xc - x, yc - y, Color.BlueViolet);
+                bp.SetPixel(xc - x, yc + y, Color.BlueViolet);
+                bp.SetPixel(xc + x, yc - y, Color.BlueViolet);
 
                 x++;
 
@@ -167,6 +167,8 @@ namespace Computer_graphics
             int x2 = int.Parse(xbt.Text);
             int y1 = int.Parse(YAT.Text);
             int y2 = int.Parse(ybt.Text);
+            pictureBox1.Visible = true;
+
             Bitmap pp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
 
             try
@@ -194,13 +196,12 @@ namespace Computer_graphics
 
         private void bunifuTileButton1_Click(object sender, EventArgs e)
         {
-          
+            pictureBox1.Visible = false;
 
             XAT.Clear();
             xbt.Clear();
             YAT.Clear();
             ybt.Clear();
-
 
             // pp.Image = New Bitmap(pp.ClientSize.Width, pp.ClientSize.Height)
             pictureBox1.Invalidate();
@@ -212,6 +213,7 @@ namespace Computer_graphics
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            pictureBox1.Visible = false;
 
         }
 
@@ -229,5 +231,21 @@ namespace Computer_graphics
         {
 
         }
+
+        private void bunifuTileButton3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MainForm mn = new MainForm();
+            mn.Show();
+    }
+
+        private void bunifuTileButton3_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            MainForm mn = new MainForm();
+            mn.Show();
+            
+        
+    }
     }
 }

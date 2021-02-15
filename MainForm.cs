@@ -24,16 +24,14 @@ namespace Computer_graphics
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-           // System.Stop();
+
+            Application.Exit();
+          
         }
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-            Algo dda_alg = new Algo();
-
-            this.Hide();
-            dda_alg.Show();
+            
 
         }
 
@@ -45,6 +43,38 @@ namespace Computer_graphics
         private void bunifuFlatButton3_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void bunifuFlatButton5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuTileButton3_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void bunifuTileButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuTileButton1_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            Algo alg = new Algo();
+            alg.Show();
+        }
+
+        private void bunifuCustomLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuCustomLabel2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
