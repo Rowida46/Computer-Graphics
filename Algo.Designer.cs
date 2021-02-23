@@ -45,18 +45,20 @@ namespace Computer_graphics
             this.Elipse = new System.Windows.Forms.RadioButton();
             this.circle = new System.Windows.Forms.RadioButton();
             this.bres = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.rotation = new System.Windows.Forms.RadioButton();
+            this.scale = new System.Windows.Forms.RadioButton();
+            this.translation = new System.Windows.Forms.RadioButton();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuTileButton2 = new Bunifu.Framework.UI.BunifuTileButton();
-            this.bunifuCustomTextbox1 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.bunifuCustomTextbox2 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
-            this.bunifuCustomTextbox3 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.angle = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.ty = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.tx = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuTileButton3 = new Bunifu.Framework.UI.BunifuTileButton();
+            this.bunifuTileButton2 = new Bunifu.Framework.UI.BunifuTileButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // ybt
@@ -183,7 +185,7 @@ namespace Computer_graphics
             this.Draw.ImeMode = System.Windows.Forms.ImeMode.AlphaFull;
             this.Draw.LabelPosition = 0;
             this.Draw.LabelText = "Draw";
-            this.Draw.Location = new System.Drawing.Point(195, 203);
+            this.Draw.Location = new System.Drawing.Point(201, 61);
             this.Draw.Margin = new System.Windows.Forms.Padding(6);
             this.Draw.Name = "Draw";
             this.Draw.Size = new System.Drawing.Size(70, 77);
@@ -216,7 +218,7 @@ namespace Computer_graphics
             this.DDA.AutoSize = true;
             this.DDA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DDA.ForeColor = System.Drawing.Color.Plum;
-            this.DDA.Location = new System.Drawing.Point(15, 256);
+            this.DDA.Location = new System.Drawing.Point(10, 93);
             this.DDA.Name = "DDA";
             this.DDA.Size = new System.Drawing.Size(146, 24);
             this.DDA.TabIndex = 14;
@@ -229,7 +231,7 @@ namespace Computer_graphics
             this.Elipse.AutoSize = true;
             this.Elipse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Elipse.ForeColor = System.Drawing.Color.Plum;
-            this.Elipse.Location = new System.Drawing.Point(17, 196);
+            this.Elipse.Location = new System.Drawing.Point(10, 33);
             this.Elipse.Name = "Elipse";
             this.Elipse.Size = new System.Drawing.Size(157, 24);
             this.Elipse.TabIndex = 15;
@@ -242,7 +244,7 @@ namespace Computer_graphics
             this.circle.AutoSize = true;
             this.circle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.circle.ForeColor = System.Drawing.Color.Plum;
-            this.circle.Location = new System.Drawing.Point(15, 226);
+            this.circle.Location = new System.Drawing.Point(10, 63);
             this.circle.Name = "circle";
             this.circle.Size = new System.Drawing.Size(153, 24);
             this.circle.TabIndex = 16;
@@ -255,7 +257,7 @@ namespace Computer_graphics
             this.bres.AutoSize = true;
             this.bres.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bres.ForeColor = System.Drawing.Color.Plum;
-            this.bres.Location = new System.Drawing.Point(17, 166);
+            this.bres.Location = new System.Drawing.Point(10, 3);
             this.bres.Name = "bres";
             this.bres.Size = new System.Drawing.Size(199, 24);
             this.bres.TabIndex = 17;
@@ -264,44 +266,44 @@ namespace Computer_graphics
             this.bres.UseVisualStyleBackColor = true;
             this.bres.CheckedChanged += new System.EventHandler(this.bres_CheckedChanged);
             // 
-            // radioButton1
+            // rotation
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.ForeColor = System.Drawing.Color.Plum;
-            this.radioButton1.Location = new System.Drawing.Point(169, 355);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(96, 24);
-            this.radioButton1.TabIndex = 18;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Rotation";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rotation.AutoSize = true;
+            this.rotation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rotation.ForeColor = System.Drawing.Color.Plum;
+            this.rotation.Location = new System.Drawing.Point(169, 355);
+            this.rotation.Name = "rotation";
+            this.rotation.Size = new System.Drawing.Size(96, 24);
+            this.rotation.TabIndex = 18;
+            this.rotation.TabStop = true;
+            this.rotation.Text = "Rotation";
+            this.rotation.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // scale
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.ForeColor = System.Drawing.Color.Plum;
-            this.radioButton2.Location = new System.Drawing.Point(32, 371);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(72, 24);
-            this.radioButton2.TabIndex = 19;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Scale";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.scale.AutoSize = true;
+            this.scale.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.scale.ForeColor = System.Drawing.Color.Plum;
+            this.scale.Location = new System.Drawing.Point(32, 371);
+            this.scale.Name = "scale";
+            this.scale.Size = new System.Drawing.Size(72, 24);
+            this.scale.TabIndex = 19;
+            this.scale.TabStop = true;
+            this.scale.Text = "Scale";
+            this.scale.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // translation
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.ForeColor = System.Drawing.Color.Plum;
-            this.radioButton3.Location = new System.Drawing.Point(30, 327);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(106, 24);
-            this.radioButton3.TabIndex = 20;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Transition";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.translation.AutoSize = true;
+            this.translation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.translation.ForeColor = System.Drawing.Color.Plum;
+            this.translation.Location = new System.Drawing.Point(30, 327);
+            this.translation.Name = "translation";
+            this.translation.Size = new System.Drawing.Size(106, 24);
+            this.translation.TabIndex = 20;
+            this.translation.TabStop = true;
+            this.translation.Text = "Transition";
+            this.translation.UseVisualStyleBackColor = true;
             // 
             // bunifuCustomLabel1
             // 
@@ -344,64 +346,44 @@ namespace Computer_graphics
             this.bunifuCustomLabel3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.bunifuCustomLabel3.Click += new System.EventHandler(this.bunifuCustomLabel3_Click);
             // 
-            // bunifuTileButton2
+            // angle
             // 
-            this.bunifuTileButton2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bunifuTileButton2.color = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bunifuTileButton2.colorActive = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bunifuTileButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTileButton2.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuTileButton2.ForeColor = System.Drawing.Color.MediumBlue;
-            this.bunifuTileButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuTileButton2.Image")));
-            this.bunifuTileButton2.ImagePosition = 15;
-            this.bunifuTileButton2.ImageZoom = 50;
-            this.bunifuTileButton2.ImeMode = System.Windows.Forms.ImeMode.AlphaFull;
-            this.bunifuTileButton2.LabelPosition = 0;
-            this.bunifuTileButton2.LabelText = "Draw";
-            this.bunifuTileButton2.Location = new System.Drawing.Point(248, 478);
-            this.bunifuTileButton2.Margin = new System.Windows.Forms.Padding(6);
-            this.bunifuTileButton2.Name = "bunifuTileButton2";
-            this.bunifuTileButton2.Size = new System.Drawing.Size(80, 67);
-            this.bunifuTileButton2.TabIndex = 24;
+            this.angle.AccessibleRole = System.Windows.Forms.AccessibleRole.Grip;
+            this.angle.BackColor = System.Drawing.Color.Black;
+            this.angle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.angle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.angle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.angle.ForeColor = System.Drawing.Color.Thistle;
+            this.angle.Location = new System.Drawing.Point(134, 507);
+            this.angle.Name = "angle";
+            this.angle.Size = new System.Drawing.Size(76, 26);
+            this.angle.TabIndex = 25;
             // 
-            // bunifuCustomTextbox1
+            // ty
             // 
-            this.bunifuCustomTextbox1.AccessibleRole = System.Windows.Forms.AccessibleRole.Grip;
-            this.bunifuCustomTextbox1.BackColor = System.Drawing.Color.Black;
-            this.bunifuCustomTextbox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuCustomTextbox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bunifuCustomTextbox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomTextbox1.ForeColor = System.Drawing.Color.Indigo;
-            this.bunifuCustomTextbox1.Location = new System.Drawing.Point(138, 507);
-            this.bunifuCustomTextbox1.Name = "bunifuCustomTextbox1";
-            this.bunifuCustomTextbox1.Size = new System.Drawing.Size(65, 26);
-            this.bunifuCustomTextbox1.TabIndex = 25;
+            this.ty.AccessibleRole = System.Windows.Forms.AccessibleRole.Grip;
+            this.ty.BackColor = System.Drawing.Color.Black;
+            this.ty.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ty.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ty.ForeColor = System.Drawing.Color.Thistle;
+            this.ty.Location = new System.Drawing.Point(134, 466);
+            this.ty.Name = "ty";
+            this.ty.Size = new System.Drawing.Size(76, 26);
+            this.ty.TabIndex = 26;
             // 
-            // bunifuCustomTextbox2
+            // tx
             // 
-            this.bunifuCustomTextbox2.AccessibleRole = System.Windows.Forms.AccessibleRole.Grip;
-            this.bunifuCustomTextbox2.BackColor = System.Drawing.Color.Black;
-            this.bunifuCustomTextbox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuCustomTextbox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bunifuCustomTextbox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomTextbox2.ForeColor = System.Drawing.Color.Indigo;
-            this.bunifuCustomTextbox2.Location = new System.Drawing.Point(134, 466);
-            this.bunifuCustomTextbox2.Name = "bunifuCustomTextbox2";
-            this.bunifuCustomTextbox2.Size = new System.Drawing.Size(69, 26);
-            this.bunifuCustomTextbox2.TabIndex = 26;
-            // 
-            // bunifuCustomTextbox3
-            // 
-            this.bunifuCustomTextbox3.AccessibleRole = System.Windows.Forms.AccessibleRole.Grip;
-            this.bunifuCustomTextbox3.BackColor = System.Drawing.Color.Black;
-            this.bunifuCustomTextbox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuCustomTextbox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bunifuCustomTextbox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomTextbox3.ForeColor = System.Drawing.Color.Indigo;
-            this.bunifuCustomTextbox3.Location = new System.Drawing.Point(134, 421);
-            this.bunifuCustomTextbox3.Name = "bunifuCustomTextbox3";
-            this.bunifuCustomTextbox3.Size = new System.Drawing.Size(69, 26);
-            this.bunifuCustomTextbox3.TabIndex = 27;
+            this.tx.AccessibleRole = System.Windows.Forms.AccessibleRole.Grip;
+            this.tx.BackColor = System.Drawing.Color.Black;
+            this.tx.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tx.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tx.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tx.ForeColor = System.Drawing.Color.Thistle;
+            this.tx.Location = new System.Drawing.Point(134, 421);
+            this.tx.Name = "tx";
+            this.tx.Size = new System.Drawing.Size(76, 26);
+            this.tx.TabIndex = 27;
             // 
             // bunifuTileButton3
             // 
@@ -422,7 +404,40 @@ namespace Computer_graphics
             this.bunifuTileButton3.Name = "bunifuTileButton3";
             this.bunifuTileButton3.Size = new System.Drawing.Size(120, 107);
             this.bunifuTileButton3.TabIndex = 28;
-            this.bunifuTileButton3.Click += new System.EventHandler(this.bunifuTileButton3_Click_1);
+            this.bunifuTileButton3.Click += new System.EventHandler(this.bunifuTileButton3_Click);
+            // 
+            // bunifuTileButton2
+            // 
+            this.bunifuTileButton2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bunifuTileButton2.color = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bunifuTileButton2.colorActive = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bunifuTileButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTileButton2.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuTileButton2.ForeColor = System.Drawing.Color.MediumBlue;
+            this.bunifuTileButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuTileButton2.Image")));
+            this.bunifuTileButton2.ImagePosition = 15;
+            this.bunifuTileButton2.ImageZoom = 50;
+            this.bunifuTileButton2.ImeMode = System.Windows.Forms.ImeMode.AlphaFull;
+            this.bunifuTileButton2.LabelPosition = 0;
+            this.bunifuTileButton2.LabelText = "Draw";
+            this.bunifuTileButton2.Location = new System.Drawing.Point(238, 421);
+            this.bunifuTileButton2.Margin = new System.Windows.Forms.Padding(6);
+            this.bunifuTileButton2.Name = "bunifuTileButton2";
+            this.bunifuTileButton2.Size = new System.Drawing.Size(70, 77);
+            this.bunifuTileButton2.TabIndex = 29;
+            this.bunifuTileButton2.Click += new System.EventHandler(this.bunifuTileButton2_Click_1);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.bres);
+            this.panel1.Controls.Add(this.Elipse);
+            this.panel1.Controls.Add(this.circle);
+            this.panel1.Controls.Add(this.DDA);
+            this.panel1.Controls.Add(this.Draw);
+            this.panel1.Location = new System.Drawing.Point(12, 131);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(296, 144);
+            this.panel1.TabIndex = 30;
             // 
             // Algo
             // 
@@ -434,23 +449,19 @@ namespace Computer_graphics
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1000, 650);
             this.ControlBox = false;
-            this.Controls.Add(this.bunifuTileButton3);
-            this.Controls.Add(this.bunifuCustomTextbox3);
-            this.Controls.Add(this.bunifuCustomTextbox2);
-            this.Controls.Add(this.bunifuCustomTextbox1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.bunifuTileButton2);
+            this.Controls.Add(this.bunifuTileButton3);
+            this.Controls.Add(this.tx);
+            this.Controls.Add(this.ty);
+            this.Controls.Add(this.angle);
             this.Controls.Add(this.bunifuCustomLabel3);
             this.Controls.Add(this.bunifuCustomLabel2);
             this.Controls.Add(this.bunifuCustomLabel1);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.bres);
-            this.Controls.Add(this.circle);
-            this.Controls.Add(this.Elipse);
-            this.Controls.Add(this.DDA);
+            this.Controls.Add(this.translation);
+            this.Controls.Add(this.scale);
+            this.Controls.Add(this.rotation);
             this.Controls.Add(this.bunifuTileButton1);
-            this.Controls.Add(this.Draw);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.YA);
             this.Controls.Add(this.YB);
@@ -466,6 +477,8 @@ namespace Computer_graphics
             this.Text = "DDA";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -488,17 +501,18 @@ namespace Computer_graphics
         private System.Windows.Forms.RadioButton Elipse;
         private System.Windows.Forms.RadioButton circle;
         private System.Windows.Forms.RadioButton bres;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton rotation;
+        private System.Windows.Forms.RadioButton scale;
+        private System.Windows.Forms.RadioButton translation;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
-        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton2;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox1;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox2;
-        private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox3;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox angle;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox ty;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox tx;
         private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton3;
+        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton2;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
