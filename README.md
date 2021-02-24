@@ -9,15 +9,13 @@
 ### Main Form 
 -----
 
-![](https://github.com/Rowida46/Machine-Learning/blob/master/MainForm.png)
-
+![](https://github.com/Rowida46/Machine-Learning/blob/master/All_Algo.png)
 
 
 ### Select one of the Following algorithms
 
-![](https://github.com/Rowida46/Machine-Learning/blob/master/All_Algo.png)
 
 
-  - If **Bresenham** selected : 
+  - If **Elips** & **Rotation** & ** Scaling** & Transformation selected : 
   
-  ![](https://github.com/Rowida46/Machine-Learning/blob/master/Bres.png)
+  ![](https://github.com/Rowida46/Machine-Learning/blob/master/elips.png)
