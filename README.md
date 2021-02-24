@@ -17,5 +17,4 @@
    ![](https://github.com/Rowida46/Machine-Learning/blob/master/elips.png)
 
 
-> **Note** : This [background img](https://th.bing.com/th/id/OIP.95FI-S8u0S9bU2u6v-vIfgAAAA?pid=ImgDet&rs=1) 
-  <img align="left" alt="GeForce GTX" width="30px" src="https://www.facebook.com/rowida.nagah.545/" draggable="false" />
+> *****Note***** : This [background img](https://th.bing.com/th/id/OIP.95FI-S8u0S9bU2u6v-vIfgAAAA?pid=ImgDet&rs=1) is [**GeForce GTX**](https://www.nvidia.com/en-us/geforce/drivers/)
