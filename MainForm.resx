@@ -1391,7 +1391,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;bunifuImageButton1.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="Titl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1424,7 +1424,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Titl.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="bunifuTileButton1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 15.75pt</value>
@@ -1548,25 +1548,25 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;bunifuTileButton1.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="bunifuCustomLabel1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="bunifuCustomLabel1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Kristen ITC, 18pt, style=Bold, Italic</value>
+    <value>VAGRounded BT, 20.25pt, style=Italic</value>
   </data>
   <data name="bunifuCustomLabel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 179</value>
   </data>
   <data name="bunifuCustomLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>207, 33</value>
+    <value>195, 33</value>
   </data>
   <data name="bunifuCustomLabel1.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
   <data name="bunifuCustomLabel1.Text" xml:space="preserve">
-    <value>Team Members</value>
+    <value>Student Name</value>
   </data>
   <data name="&gt;&gt;bunifuCustomLabel1.Name" xml:space="preserve">
     <value>bunifuCustomLabel1</value>
@@ -1578,7 +1578,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;bunifuCustomLabel1.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="bunifuCustomLabel2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1590,7 +1590,7 @@
     <value>NoControl</value>
   </data>
   <data name="bunifuCustomLabel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 355</value>
+    <value>2, 292</value>
   </data>
   <data name="bunifuCustomLabel2.Size" type="System.Drawing.Size, System.Drawing">
     <value>197, 40</value>
@@ -1611,7 +1611,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;bunifuCustomLabel2.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="bunifuCustomLabel4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1623,7 +1623,7 @@
     <value>NoControl</value>
   </data>
   <data name="bunifuCustomLabel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>42, 414</value>
+    <value>70, 365</value>
   </data>
   <data name="bunifuCustomLabel4.Size" type="System.Drawing.Size, System.Drawing">
     <value>161, 21</value>
@@ -1644,7 +1644,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;bunifuCustomLabel4.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="bunifuCustomLabel3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1656,16 +1656,16 @@
     <value>NoControl</value>
   </data>
   <data name="bunifuCustomLabel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>83, 455</value>
+    <value>79, 409</value>
   </data>
   <data name="bunifuCustomLabel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 21</value>
+    <value>203, 21</value>
   </data>
   <data name="bunifuCustomLabel3.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
   <data name="bunifuCustomLabel3.Text" xml:space="preserve">
-    <value>Eng : Shimaa</value>
+    <value>Eng : Takwa Mohamed</value>
   </data>
   <data name="&gt;&gt;bunifuCustomLabel3.Name" xml:space="preserve">
     <value>bunifuCustomLabel3</value>
@@ -1677,39 +1677,6 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;bunifuCustomLabel3.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="bunifuCustomLabel5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="bunifuCustomLabel5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MV Boli, 15.75pt, style=Bold, Italic</value>
-  </data>
-  <data name="bunifuCustomLabel5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="bunifuCustomLabel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>107, 255</value>
-  </data>
-  <data name="bunifuCustomLabel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>161, 28</value>
-  </data>
-  <data name="bunifuCustomLabel5.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="bunifuCustomLabel5.Text" xml:space="preserve">
-    <value>Eslam Waheed</value>
-  </data>
-  <data name="&gt;&gt;bunifuCustomLabel5.Name" xml:space="preserve">
-    <value>bunifuCustomLabel5</value>
-  </data>
-  <data name="&gt;&gt;bunifuCustomLabel5.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuCustomLabel, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;bunifuCustomLabel5.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;bunifuCustomLabel5.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="bunifuCustomLabel6.AutoSize" type="System.Boolean, mscorlib">
@@ -1722,7 +1689,7 @@
     <value>NoControl</value>
   </data>
   <data name="bunifuCustomLabel6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>70, 220</value>
+    <value>111, 233</value>
   </data>
   <data name="bunifuCustomLabel6.Size" type="System.Drawing.Size, System.Drawing">
     <value>171, 28</value>

@@ -114,50 +114,50 @@ namespace Computer_graphics
             // 
             this.XB.AutoSize = true;
             this.XB.BackColor = System.Drawing.Color.Black;
-            this.XB.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XB.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.XB.ForeColor = System.Drawing.Color.Plum;
             this.XB.Location = new System.Drawing.Point(288, 19);
             this.XB.Name = "XB";
-            this.XB.Size = new System.Drawing.Size(92, 25);
+            this.XB.Size = new System.Drawing.Size(57, 31);
             this.XB.TabIndex = 6;
-            this.XB.Text = "X2 / RX";
+            this.XB.Text = "X2 ";
             // 
             // XA
             // 
             this.XA.AutoSize = true;
             this.XA.BackColor = System.Drawing.Color.Black;
-            this.XA.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XA.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.XA.ForeColor = System.Drawing.Color.Plum;
             this.XA.Location = new System.Drawing.Point(17, 21);
             this.XA.Name = "XA";
-            this.XA.Size = new System.Drawing.Size(92, 25);
+            this.XA.Size = new System.Drawing.Size(57, 31);
             this.XA.TabIndex = 7;
-            this.XA.Text = "X1 / XC";
+            this.XA.Text = "X1 ";
             this.XA.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // YB
             // 
             this.YB.AutoSize = true;
             this.YB.BackColor = System.Drawing.Color.Black;
-            this.YB.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.YB.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.YB.ForeColor = System.Drawing.Color.Plum;
-            this.YB.Location = new System.Drawing.Point(286, 56);
+            this.YB.Location = new System.Drawing.Point(289, 56);
             this.YB.Name = "YB";
-            this.YB.Size = new System.Drawing.Size(94, 25);
+            this.YB.Size = new System.Drawing.Size(57, 31);
             this.YB.TabIndex = 8;
-            this.YB.Text = "Y2 / RY";
+            this.YB.Text = "Y2 ";
             // 
             // YA
             // 
             this.YA.AutoSize = true;
             this.YA.BackColor = System.Drawing.Color.Black;
-            this.YA.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.YA.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.YA.ForeColor = System.Drawing.Color.Plum;
             this.YA.Location = new System.Drawing.Point(10, 58);
             this.YA.Name = "YA";
-            this.YA.Size = new System.Drawing.Size(94, 25);
+            this.YA.Size = new System.Drawing.Size(57, 31);
             this.YA.TabIndex = 9;
-            this.YA.Text = "Y1 / YC";
+            this.YA.Text = "Y1 ";
             // 
             // pictureBox1
             // 

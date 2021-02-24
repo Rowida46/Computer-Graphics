@@ -319,10 +319,26 @@ namespace Computer_graphics
                     bres_fun(x1, x2, y1, y2, pp);
 
                 if (Elipse.Checked)
-                    elipse_dda(x1, y1, x2, y2, pp);
+                {
+                    XA.Text = "RX";
+                    XB.Text = "XC";
+                    YA.Text = "RY";
+                    YB.Text = "YC";
+
+
+                    ellipse_fun(pp,x2, y2, x1, y1 );
+
+                    // elipse_dda(x1, y1, x2, y2, pp);
+                }
 
                 if (circle.Checked)
+                {
+                    XA.Text = "X";
+                    YA.Text = "Y";
+                    XB.Text = "Radius";
+                    YB.Visible = false;
                     Circle_fun(x1, y1, x2, pp);
+                }
             }
 
             catch (Exception ) { MessageBox.Show("please inter correct data"); }
@@ -343,6 +359,7 @@ namespace Computer_graphics
             tx.Clear();
             ty.Clear();
             angle.Clear();
+            YB.Visible = true;
 
             // clear drawing in pictuerbox
             pictureBox1.Image = null;
@@ -398,36 +415,32 @@ namespace Computer_graphics
                 {
                     int tx_ = int.Parse(tx.Text);
                     int ty_ = int.Parse(ty.Text);
+                    x1 += tx_;
+                    x2 += tx_;
+                    y1 += ty_;
+                    y2 += ty_;
 
                     if (DDA.Checked)
                     {
-                        x1 += tx_;
-                        x2 += tx_;
-                        y1 += ty_;
-                        y2 += ty_;
+                        
                         DDA_fun(x1, x2, y1, y2, pp);
                     }
 
                     if (bres.Checked)
                     {
-                        x1 += tx_;
-                        x2 += tx_;
-                        y1 += ty_;
-                        y2 += ty_;
+                        
                         bres_fun(x1, x2, y1, y2, pp);
                     }
 
                     if (Elipse.Checked)
                     {
-                        x1 += tx_;
-                        y1 += ty_;
-                        elipse_dda(x1, y1, x2, y2, pp);
+                        
+                        elipse_dda(x2, y2, x1, y1, pp);
                     }
 
                     if (circle.Checked)
                     {
-                        x1 += tx_;
-                        y1 += ty_;
+                        
                         Circle_fun(x1, y1, x2, pp);
                     }
                 }
@@ -466,7 +479,7 @@ namespace Computer_graphics
                         x2 = (int)(x2 * sx);
                         y2 = (int)(y2 * sy);
 
-                        elipse_dda(x1, y1, x2, y2, pp);
+                        elipse_dda(x2, y2, x1, y1, pp);
                     }
 
                     if (circle.Checked) {
@@ -494,7 +507,7 @@ namespace Computer_graphics
 
                     if (Elipse.Checked)
 
-                        elipse_dda(x1, y1, x2, y2, pp);
+                        elipse_dda(x2, y2, x1, y1, pp);
 
                     if (circle.Checked)
                         Circle_fun(x1, y1, x2, pp);

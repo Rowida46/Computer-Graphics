@@ -37,7 +37,6 @@ namespace Computer_graphics
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
@@ -101,12 +100,6 @@ namespace Computer_graphics
             this.bunifuCustomLabel3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
             // 
-            // bunifuCustomLabel5
-            // 
-            resources.ApplyResources(this.bunifuCustomLabel5, "bunifuCustomLabel5");
-            this.bunifuCustomLabel5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
-            // 
             // bunifuCustomLabel6
             // 
             resources.ApplyResources(this.bunifuCustomLabel6, "bunifuCustomLabel6");
@@ -122,7 +115,6 @@ namespace Computer_graphics
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ControlBox = false;
             this.Controls.Add(this.bunifuCustomLabel6);
-            this.Controls.Add(this.bunifuCustomLabel5);
             this.Controls.Add(this.bunifuCustomLabel3);
             this.Controls.Add(this.bunifuCustomLabel4);
             this.Controls.Add(this.bunifuCustomLabel2);
@@ -150,7 +142,6 @@ namespace Computer_graphics
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
     }
 }
